@@ -149,6 +149,8 @@ ID를 받아 주문을 생성한다.
 - DELETE /basket/{id} 전체 상품 삭제
 - DELETE /basket/{id}/{goodId} 해당 상품 삭제
 
+## 플로우 차트
+![img.png](readmeImages/flowchart.png)
 
 ## ERD
-![img.png](readmeImages/img.png)
+![img.png](readmeImages/erd.png)
