@@ -35,44 +35,7 @@
         - 조회 시 사용자 식별자(ID), 필요
 ```
 ## API 명세
-### 잔액
-#### 잔액 충전
-##### 개요
-ID와 충전량을 받아 잔액을 충전한다.
-##### 엔드포인트
-`PATCH /charge/{id}`
-##### Request
-###### 파라미터
-|name       |type      | decription          |required|
-|-----------|----------|---------------------|--------|
-|id         |String    | 고유 식별자              |yes     |
-|amount     |int       | 충전 할 금액             |yes     |
-###### RequestBody
-```json
-{
-    "amount": 10000
-}
-```
-##### Response
-- 200 OK: 충전 성공. 충전된 잔액을 반환
-- 400 Bad Request: 파라미터가 옳지 않음
-- 404 Not Found: 유저가 존재하지 않음
-##### Error
-
----
-
-#### 잔액조회
-##### 개요
-ID를 받아 현재 잔액을 조회한다.
-##### 엔드포인트
-`GET /charge/{id}`
-##### Request
-###### 파라미터
-|name       |type      |decription          |required|
-|-----------|----------|--------------------|--------|
-|id         |String    |고유 식별자          |yes     |
-##### Response
-##### Error
+docs 디렉토리
 
 ---
 
