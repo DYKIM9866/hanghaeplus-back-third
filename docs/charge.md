@@ -7,7 +7,7 @@
 - URL - `GET /charge/{id}`
 ### 요청
 - 헤더:
-    - Content-Type: application/json
+    
 ### 응답
 - 200 OK 성공적으로 조회된 경우
 ```json
