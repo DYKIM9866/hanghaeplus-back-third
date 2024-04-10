@@ -37,32 +37,6 @@
 ## API 명세
 docs 디렉토리 확인
 
-
-### 주문
-#### 주문하기
-##### 개요
-ID를 받아 주문을 생성한다.
-##### 엔드포인트
-`POST /order/{id}`
-##### Request
-###### 파라미터
-|name       |type      |decription          |required|
-|-----------|----------|--------------------|--------|
-|id         |String    |고유 식별자          |yes     |
-###### RequestBody
-```json
-{
-    "goodId": "123",
-    "amount": 2
-}
-```
-##### Response
-- 201 Created: 주문 생성 성공.
-- 400 Bad Request: 파라미터가 옳지 않음
-- 404 Not Found: id가 존재하지 않음
-##### Error
-
-
 ### 장바구니(나중에 고려)
 - GET /basket/{id} 장바구니 전체 조회 ->  List
 - POST /basket/{id}/{goodId} 상품 추가
