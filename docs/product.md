@@ -17,7 +17,18 @@ sequenceDiagram
 - Header
   - Content-Type: application/json
 ### 응답
-
+- 200 OK : 성공적으로 조회 된 경우
+  ```json
+  {
+    "meta": {
+      "status": "OK"
+    },
+    "body": {
+      "productId": "id",
+      "quantity": 2 
+    } 
+  }  
+  ```
 
 ## 인기 상품 조회
 ### 시퀀스 다이어그램
@@ -32,5 +43,38 @@ sequenceDiagram
     s -->> c: 200 OK, Response 반환
 ```
 ### 요청
-
+- 메서드: GET
+- URL: /api/v1/products/pop
+- Header
+  - Content-Type: application/json
 ### 응답
+- 200 OK : 성공적으로 조회 된 경우
+  ```json
+  {
+    "meta": {
+      "status": "OK"
+    },
+    "body": [
+      {
+        "productId": "id",
+        "quantity": 2 
+      },
+      {
+        "productId": "id",
+        "quantity": 2 
+      },
+      {
+        "productId": "id",
+        "quantity": 2 
+      },
+      {
+        "productId": "id",
+        "quantity": 2 
+      },
+      {
+        "productId": "id",
+        "quantity": 2 
+      }
+    ]
+  }  
+  ```

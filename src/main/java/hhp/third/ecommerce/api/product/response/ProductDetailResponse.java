@@ -1,0 +1,8 @@
+package hhp.third.ecommerce.api.product.response;
+
+public record ProductDetailResponse(
+        String id,
+        String name,
+        int price,
+        int stock) {
+}

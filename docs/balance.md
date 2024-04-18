@@ -25,13 +25,11 @@ sequenceDiagram
     ```json
   {
     "meta": {
-      "status": "OK",
-      "total_count": 1
+      "status": "OK"
     },
     "body": {
       "userId": "id",
-      "balance": 1,
-      "message": "Successful"
+      "balance": 1
     }
   }
     ```
